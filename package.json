@@ -1,0 +1,19 @@
+{
+  "name": "sti-backend",
+  "version": "1.0.0",
+  "description": "My first backend application",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiamont/sti-backend.git"
+  },
+  "author": "Sofia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fiamont/sti-backend/issues"
+  },
+  "homepage": "https://github.com/fiamont/sti-backend#readme"
+}
