@@ -14,32 +14,34 @@ app.get("/", (req ,res)=>{
     body={"status": "available"}
     res.status(200).send(body)
 })
-app.get('/highscore', function(req, res) {
+app.get("/highscore", (req, res)=>{
     headers = { http_status: 200, "cache-control": "no-cache" };
     body = [
         {
             "name": "Game",
             "points": "Points",
-            "player": "Player"
+            "player": "Player",
         },
         {
             "name": "Tetris",
             "points": 56,
-            "player": "Anna"
+            "player": "Anna",
     
         },
         {
             "name": "Memory",
             "points": 50,
-            "player": "Stina"
+            "player": "Stina",
         },
         {
             "name": "Snake",
             "points": 48,
-            "player": "Patrik"
-        }
-    ]
-})
+            "player": "Patrik",
+        },
+    ];
+    res.set("Content-Type", "application/json");
+    res.status(200).send(body);
+});
 
 app.listen(PORT , ()=>{
     console.log(`STARTED LISTENING ON PORT ${PORT}`)
