@@ -18,28 +18,12 @@ app.get("/levelOne", (req, res)=>{
     headers = { http_status: 200, "cache-control": "no-cache" };
     body = [
         {
-            "name": "Butterfly",
-            "image": "https://openclipart.org/image/400px/281767"
-        },
-        {
             "name": "Cat",
             "image": "https://openclipart.org/image/400px/227472"
         },
         {
             "name": "Dino",
             "image": "https://openclipart.org/image/400px/314119"
-        },
-        {
-            "name": "Dog",
-            "image": "https://openclipart.org/image/400px/17692"
-        },
-        {
-            "name": "Dolphin",
-            "image": "https://openclipart.org/image/400px/300661"
-        },
-        {
-            "name": "Elephant",
-            "image": "https://openclipart.org/image/400px/83479"
         },
         {
             "name": "Frog",
@@ -54,32 +38,8 @@ app.get("/levelOne", (req, res)=>{
             "image": "https://openclipart.org/image/400px/191898"
         },
         {
-            "name": "Horse",
-            "image": "https://openclipart.org/image/400px/170851"
-        },
-        {
             "name": "Lion",
             "image": "https://openclipart.org/image/400px/335742"
-        },
-        {
-            "name": "Mouse",
-            "image": "https://openclipart.org/image/400px/17558"
-        },
-        {
-            "name": "Owl",
-            "image": "https://openclipart.org/image/400px/168873"
-        },
-        {
-            "name": "Sloth",
-            "image": "https://openclipart.org/image/400px/335271"
-        },
-        {
-            "name": "Turtle",
-            "image": "https://openclipart.org/image/400px/173367"
-        },
-        {
-            "name": "Zebra",
-            "image": "https://openclipart.org/image/400px/314473"
         }
     ];
     res.set("Content-Type", "application/json");
@@ -94,24 +54,12 @@ app.get("/levelTwo", (req, res)=>{
             "image": "https://openclipart.org/image/400px/281767"
         },
         {
-            "name": "Cat",
-            "image": "https://openclipart.org/image/400px/227472"
-        },
-        {
-            "name": "Dino",
-            "image": "https://openclipart.org/image/400px/314119"
-        },
-        {
             "name": "Dog",
             "image": "https://openclipart.org/image/400px/17692"
         },
         {
             "name": "Dolphin",
             "image": "https://openclipart.org/image/400px/300661"
-        },
-        {
-            "name": "Elephant",
-            "image": "https://openclipart.org/image/400px/83479"
         },
         {
             "name": "Frog",
@@ -126,10 +74,6 @@ app.get("/levelTwo", (req, res)=>{
             "image": "https://openclipart.org/image/400px/191898"
         },
         {
-            "name": "Horse",
-            "image": "https://openclipart.org/image/400px/170851"
-        },
-        {
             "name": "Lion",
             "image": "https://openclipart.org/image/400px/335742"
         },
@@ -140,14 +84,6 @@ app.get("/levelTwo", (req, res)=>{
         {
             "name": "Owl",
             "image": "https://openclipart.org/image/400px/168873"
-        },
-        {
-            "name": "Sloth",
-            "image": "https://openclipart.org/image/400px/335271"
-        },
-        {
-            "name": "Turtle",
-            "image": "https://openclipart.org/image/400px/173367"
         },
         {
             "name": "Zebra",
