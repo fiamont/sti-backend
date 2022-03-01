@@ -14,6 +14,33 @@ app.get("/", (req ,res)=>{
     body={"status": "available"}
     res.status(200).send(body)
 })
+
+app.get("/fastestPlayer", (req, res)=>{
+    headers = { http_status: 200, "cache-control": "no-cache" };
+    body = [
+        {
+            "level": "Level 1",
+            "time": 1.5,
+            "player": "Robert",
+            "image": "https://openclipart.org/image/400px/22124"
+        },
+        {
+            "level": "Level 2",
+            "time": 2.3,
+            "player": "Stina",
+            "image": "https://openclipart.org/image/400px/22129"
+        },
+        {
+            "level": "Level 3",
+            "time": 2.8,
+            "player": "Patrik",
+            "image": "https://openclipart.org/image/400px/22232"
+        }
+    ];
+    res.set("Content-Type", "application/json");
+    res.status(200).send(body);
+});
+
 app.get("/levelOne", (req, res)=>{
     headers = { http_status: 200, "cache-control": "no-cache" };
     body = [
