@@ -196,24 +196,38 @@ app.get("/levelThree", (req, res)=>{
     res.status(200).send(body);
 });
 
+//rename to fastestplayer?? (and remove other fastest player?)
+app.get("/highscores", (req ,res)=>{
+    headers={"http_status":200, "cache-control":  "no-cache"}
+
+    // sortera
+    users.sort((a, b) => b.score - a.score);
+    
+    res.status(200).send(users)
+})
+
 app.get("/registerscore", (req ,res)=>{
     headers={"http_status":200, "cache-control":  "no-cache"}
     let user = req.query.user
     let score = req.query.score
-    users[user] = score
+    
+    let data = {"user": user, "score": score}
+    if(users.length <= 5){
+          users.push(data);
+    } else if(score > users[4].score){
+          users.splice(4, 1);
+          users.push(data);
+    }
+    
     res.status(200).send({"status":"success"})
- })
 
-app.get("/highscores", (req ,res)=>{
-    headers={"http_status":200, "cache-control":  "no-cache"}
-    res.status(200).send(users)
- })
+})
 
 app.get('/auth', (req, res) => {
     let user = rug.generate();
     users[user] = 0
     res.status(200).send({"user":user})
- });
+});
 
 app.listen(PORT , ()=>{
     console.log(`STARTED LISTENING ON PORT ${PORT}`)
