@@ -197,7 +197,7 @@ app.get("/levelThree", (req, res)=>{
 });
 
 //rename to fastestplayer?? (and remove other fastest player?)
-app.get("/highscores", (req ,res)=>{
+/*app.get("/highscores", (req ,res)=>{
     headers={"http_status":200, "cache-control":  "no-cache"}
 
     // sortera
@@ -228,7 +228,7 @@ app.get('/auth', (req, res) => {
     users[user] = 0
     res.status(200).send({"user":user})
 });
-
+*/
 app.listen(PORT , ()=>{
     console.log(`STARTED LISTENING ON PORT ${PORT}`)
 });
