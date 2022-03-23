@@ -54,7 +54,7 @@ app.get("/levelOne", (req, res)=>{
         },
         {
             "name": "Cat",
-            "image": "images\cat.jpg"
+            "image": "images/cat.jpg"
             //"image": "http://clipart-library.com/images/8TAb5o9ec.jpg"
         },
         {
