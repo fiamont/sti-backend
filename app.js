@@ -54,7 +54,7 @@ app.get("/levelOne", (req, res)=>{
         },
         {
             "name": "Cat",
-            "image": "images/cat.jpg"
+            "image": "https://w7.pngwing.com/pngs/299/588/png-transparent-black-and-white-cat-illustration-ragdoll-siberian-cat-burmese-cat-kitten-cartoon-black-kitten-cartoon-mammal-cat-like-mammal-carnivoran-thumbnail.png"
             //"image": "http://clipart-library.com/images/8TAb5o9ec.jpg"
         },
         {
