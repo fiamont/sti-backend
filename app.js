@@ -49,29 +49,28 @@ app.get("/levelOne", (req, res)=>{
     headers = { http_status: 200, "cache-control": "no-cache" };
     body = [
         {
-            "name": "Bumblebee",
-            "image": "https://clipartix.com/wp-content/uploads/2016/05/Bumble-bee-honey-bee-clipart-image-cartoon-honey-bee-flying-around.jpg"
-        },
-        {
             "name": "Cat",
-            "image": "https://w7.pngwing.com/pngs/299/588/png-transparent-black-and-white-cat-illustration-ragdoll-siberian-cat-burmese-cat-kitten-cartoon-black-kitten-cartoon-mammal-cat-like-mammal-carnivoran-thumbnail.png"
-            //"image": "http://clipart-library.com/images/8TAb5o9ec.jpg"
+            "image": "https://openclipart.org/image/400px/227472"
         },
         {
             "name": "Dino",
-            "image": "http://clipart-library.com/images/ki8nKEdbT.png"
+            "image": "https://openclipart.org/image/400px/314119"
         },
         {
             "name": "Frog",
-            "image": "http://clipart-library.com/images/8TznoGGoc.jpg"
+            "image": "https://openclipart.org/image/400px/169932"
         },
         {
             "name": "Hippo",
-            "image": "http://clipart-library.com/images/8cz8jeeKi.png"
+            "image": "https://openclipart.org/image/400px/22337"
+        },
+        {
+            "name": "Honeybee",
+            "image": "https://openclipart.org/image/400px/191898"
         },
         {
             "name": "Lion",
-            "image": "http://clipart-library.com/images/kTKBeL7jc.png"
+            "image": "https://openclipart.org/image/400px/335742"
         }
     ];
     res.set("Content-Type", "application/json");
@@ -82,121 +81,121 @@ app.get("/levelTwo", (req, res)=>{
     headers = { http_status: 200, "cache-control": "no-cache" };
     body = [
         {
-            "name": "Bumblebee",
-            "image": "https://clipartix.com/wp-content/uploads/2016/05/Bumble-bee-honey-bee-clipart-image-cartoon-honey-bee-flying-around.jpg"
-        },
-        {
             "name": "Butterfly",
-            "image": "http://clipart-library.com/img/853986.png"
+            "image": "https://openclipart.org/image/400px/281767"
         },
         {
             "name": "Dog",
-            "image": "https://clipartix.com/wp-content/uploads/2016/12/Dog-clip-art-pictures-of-dogs.jpg"
+            "image": "https://openclipart.org/image/400px/17692"
+        },
+        {
+            "name": "Dolphin",
+            "image": "https://openclipart.org/image/400px/300661"
         },
         {
             "name": "Frog",
-            "image": "http://clipart-library.com/images/8TznoGGoc.jpg"
+            "image": "https://openclipart.org/image/400px/169932"
         },
         {
             "name": "Hippo",
-            "image": "http://clipart-library.com/images/8cz8jeeKi.png"
+            "image": "https://openclipart.org/image/400px/22337"
+        },
+        {
+            "name": "Honeybee",
+            "image": "https://openclipart.org/image/400px/191898"
         },
         {
             "name": "Lion",
-            "image": "http://clipart-library.com/images/kTKBeL7jc.png"
+            "image": "https://openclipart.org/image/400px/335742"
         },
         {
             "name": "Mouse",
-            "image": "http://clipart-library.com/images/kTMnkR49c.jpg"
+            "image": "https://openclipart.org/image/400px/17558"
         },
         {
             "name": "Owl",
-            "image": "http://clipart-library.com/images/kiKRpgeij.png"
-        },
-        {
-            "name": "Whale",
-            "image": "http://clipart-library.com/images/riLxGxRaT.jpg"
+            "image": "https://openclipart.org/image/400px/168873"
         },
         {
             "name": "Zebra",
-            "image": "https://cliparting.com/wp-content/uploads/2016/08/Clip-art-zebra-clipart-image.png"
-        }
-    ];
-    res.set("Content-Type", "application/json");
-    res.status(200).send(body);
-});
-app.get("/levelThree", (req, res)=>{
-    headers = { http_status: 200, "cache-control": "no-cache" };
-    body = [
-        {
-            "name": "Bumblebee",
-            "image": "https://clipartix.com/wp-content/uploads/2016/05/Bumble-bee-honey-bee-clipart-image-cartoon-honey-bee-flying-around.jpg"
-        },
-        {
-            "name": "Butterfly",
-            "image": "http://clipart-library.com/img/853986.png"
-        },
-        {
-            "name": "Cat",
-            "image": "http://clipart-library.com/images/8TAb5o9ec.jpg"
-        },
-        {
-            "name": "Dino",
-            "image": "http://clipart-library.com/images/ki8nKEdbT.png"
-        },
-        {
-            "name": "Dog",
-            "image": "https://clipartix.com/wp-content/uploads/2016/12/Dog-clip-art-pictures-of-dogs.jpg"
-        },
-        {
-            "name": "Elephant",
-            "image": "http://clipart-library.com/images/pkT8ERRir.png"
-        },
-        {
-            "name": "Frog",
-            "image": "http://clipart-library.com/images/8TznoGGoc.jpg"
-        },
-        {
-            "name": "Hippo",
-            "image": "http://clipart-library.com/images/8cz8jeeKi.png"
-        },
-        {
-            "name": "Horse",
-            "image": "http://clipart-library.com/images/dc9XoERLi.png"
-        },
-        {
-            "name": "Lion",
-            "image": "http://clipart-library.com/images/kTKBeL7jc.png"
-        },
-        {
-            "name": "Mouse",
-            "image": "http://clipart-library.com/images/kTMnkR49c.jpg"
-        },
-        {
-            "name": "Owl",
-            "image": "http://clipart-library.com/images/kiKRpgeij.png"
-        },
-        {
-            "name": "Sloth",
-            "image": "http://clipart-library.com/img1/1871623.jpg"
-        },
-        {
-            "name": "Turtle",
-            "image": "https://publicdomainvectors.org/photos/1449722324.png"
-        },
-        {
-            "name": "Whale",
-            "image": "http://clipart-library.com/images/riLxGxRaT.jpg"
-        },
-        {
-            "name": "Zebra",
-            "image": "https://cliparting.com/wp-content/uploads/2016/08/Clip-art-zebra-clipart-image.png"
+            "image": "https://openclipart.org/image/400px/314473"
         }
     ];
     res.set("Content-Type", "application/json");
     res.status(200).send(body);
 });
 
+app.get("/levelThree", (req, res)=>{
+    headers = { http_status: 200, "cache-control": "no-cache" };
+    body = [
+        {
+            "name": "Butterfly",
+            "image": "https://openclipart.org/image/400px/281767"
+        },
+        {
+            "name": "Cat",
+            "image": "https://openclipart.org/image/400px/227472"
+        },
+        {
+            "name": "Dino",
+            "image": "https://openclipart.org/image/400px/314119"
+        },
+        {
+            "name": "Dog",
+            "image": "https://openclipart.org/image/400px/17692"
+        },
+        {
+            "name": "Dolphin",
+            "image": "https://openclipart.org/image/400px/300661"
+        },
+        {
+            "name": "Elephant",
+            "image": "https://openclipart.org/image/400px/83479"
+        },
+        {
+            "name": "Frog",
+            "image": "https://openclipart.org/image/400px/169932"
+        },
+        {
+            "name": "Hippo",
+            "image": "https://openclipart.org/image/400px/22337"
+        },
+        {
+            "name": "Honeybee",
+            "image": "https://openclipart.org/image/400px/191898"
+        },
+        {
+            "name": "Horse",
+            "image": "https://openclipart.org/image/400px/170851"
+        },
+        {
+            "name": "Lion",
+            "image": "https://openclipart.org/image/400px/335742"
+        },
+        {
+            "name": "Mouse",
+            "image": "https://openclipart.org/image/400px/17558"
+        },
+        {
+            "name": "Owl",
+            "image": "https://openclipart.org/image/400px/168873"
+        },
+        {
+            "name": "Sloth",
+            "image": "https://openclipart.org/image/400px/335271"
+        },
+        {
+            "name": "Turtle",
+            "image": "https://openclipart.org/image/400px/173367"
+        },
+        {
+            "name": "Zebra",
+            "image": "https://openclipart.org/image/400px/314473"
+        }
+    ];
+    res.set("Content-Type", "application/json");
+    res.status(200).send(body);
+});
 //rename to fastestplayer?? (and remove other fastest player?)
 /*app.get("/highscores", (req ,res)=>{
     headers={"http_status":200, "cache-control":  "no-cache"}
